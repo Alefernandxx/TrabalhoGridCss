@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Press Start 2P", cursive;
+    line-height: 1.5;
+    background-color: blue;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+header {
+    height: 100px;
+    top: 0;
+    background-color: black;
+    padding: 1rem;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #000;
+
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 10px;
+    border-top: 2px solid #0ff;
+    margin-top: 0px;
+}
+
+footer a {
+
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+nav a:hover {
+    transform: scale(1.0) rotate(0.1deg);
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.menu-fixo {
+    position: sticky;
+    top: 0;
+    background-color: #1b1b1b;
+    padding: 1rem;
+    z-index: 1500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-fixo ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu-fixo a {
+    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    transition: color 0.3s;
+
+}
+
+.menu-fixo a:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+.logo-nome {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    color: #00ffcc;
+    font-size: 1rem;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: clamp(0.6rem, 2vw, 1rem);
+    letter-spacing: -1px;
+
+
+}
+
+.logo-nome:hover {
+    transform: scale(1.0) rotate(0.1deg);
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+section {
+    min-height: 100vh;
+    scroll-margin-top: 80px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+
+
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+
+
+}
+
+
+
+#secao1 .conteudo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+#secao1 .conteudo:hover {
+    transform: scale(1.05);
+
+}
+
+
+#secao1 p {
+    padding: 2rem
+}
+
+
+
+#secao2 {
+    background-color: #1b1b1b;
+    color: #f0f0f0;
+    padding: 3rem 2rem;
+    border-top: 4px solid #00ffcc;
+}
+
+
+#secao2 h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+#secao2 .conteudo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 1px;
+    box-shadow: 0 0 15px #00ffcc44;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;
+}
+
+#secao2 .conteudo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #00ffcc88;
+}
+
+
+#secao2 .conteudo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+#secao2 .conteudo p {
+    text-align: justify;
+
+}
+
+#secao3 {
+    background-color: #000000;
+    color: #00ffcc;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: #1b1b1b;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffcc33;
+}
+
+fieldset {
+    border: 2px solid #00ffcc;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+}
+
+input,
+select,
+textarea {
+    margin-top: 0.3rem;
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+}
+
+/* Seção 4: Painel de Fotos */
+#secao4 {
+    padding: 2rem;
+    background-color: #111;
+    color: #00ffcc;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.painel-fotos {
+    display: grid;
+    
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px;
+
+    width: 70vw;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.foto {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ffcc55;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+
+}
+
+.foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffff;
+}
+
+.foto1 {
+    background-image: url('../imagens/game1.jpg');
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.foto2 {
+    background-image: url('../imagens/game2.jpg');
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.foto3 {
+    background-image: url('../imagens/game3.jpg');
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.foto4 {
+    background-image: url('../imagens/game4.png');
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.foto5 {
+    background-image: url('../imagens/game5.jpg');
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 768px) {
+    .painel-fotos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 150px);
+        width: 90vw;
+    }
+
+    .foto1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .foto2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .foto3 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .foto4 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .foto5 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+}
+
+
+@media (max-width: 768px) {
+    section .conteudo p {
+        font-size: 0.6rem;
+        text-align: justify;
+        line-height: 1.5;
+        padding: 1rem;
+        letter-spacing: -1.5px;
+    }
+
+
+}
+
+section .conteudo img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+section .conteudo p {
+    flex: 1;
+}
